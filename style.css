@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --blue: #003366;
+  --gold: #ffd700;
+}
+
+/* College Header */
+.college-header {
+  display: flex;
+  align-items: center;
+  background: var(--blue);
+  color: white;
+  padding: 10px 20px;
+}
+
+.gvp-logo {
+  width: 70px;
+  margin-right: 15px;
+}
+
+.college-info h1 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.college-info p {
+  font-size: 0.9em;
+  color: #ffec80;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gold);
+  color: var(--blue);
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #002b5c, #004080);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--gold);
+  color: var(--blue);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+/* Events */
+.event-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 250px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Team */
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.member img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background: var(--blue);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s, transform 1s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
