@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>SEEE – GVPCE | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+        name="description"
+        content="Society of Electrical & Electronics Engineers – GVP College of Engineering (A). Official club website."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+<header>
+    <div class="container navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-symbol">
+                <span>SE</span>
+            </div>
+            <div class="nav-logo-text">
+                <span>SEEE – GVPCE(A)</span>
+                <span>Society of Electrical & Electronics Engineers</span>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="hero container">
+        <div class="hero-content reveal">
+            <p class="hero-subtitle">Department of EEE · GVPCE(A)</p>
+            <h1>
+                <span class="hero-gradient">Student Electrical & Electronics Engineers</span><br />
+                <span style="font-size: 1.4rem;">Official Club of GVPCE(A)</span>
+            </h1>
+
+            <p class="hero-description">
+                A student-driven club that sparks innovation, industry exposure, and teamwork in Electrical &
+                Electronics Engineering at Gayatri Vidya Parishad College of Engineering (A).
+            </p>
+
+            <div class="hero-badges">
+                <span class="badge-chip">
+                    <i class="fa-solid fa-bolt"></i>
+                    Workshops & Hands-on
+                </span>
+                <span class="badge-chip">
+                    <i class="fa-solid fa-people-group"></i>
+                    Student-Driven Events
+                </span>
+                <span class="badge-chip">
+                    <i class="fa-solid fa-award"></i>
+                    Hackathons · Tech-Talks
+                </span>
+            </div>
+
+            <div class="hero-actions">
+                <a href="events.html" class="btn btn-primary">
+                    View Events
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                    Join the Club
+                    <i class="fa-solid fa-user-plus"></i>
+                </a>
+            </div>
+
+            <p class="hero-meta">
+                Scroll down or use the menu to explore the club, core team, events, gallery & contact details.
+            </p>
+        </div>
+
+        <aside class="hero-card reveal">
+            <div class="hero-orb"></div>
+            <p class="hero-card-tag">2025 Season Highlights</p>
+            <h2 class="hero-card-title">Powering ideas beyond the classroom.</h2>
+            <p class="hero-card-sub">
+                From power systems to embedded design – SEEE brings together passionate students, faculty mentors,
+                and industry experts under one roof.
+            </p>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <p class="hero-stat-label">Active Members</p>
+                    <p class="hero-stat-value">80+ Students</p>
+                </div>
+                <div class="hero-stat">
+                    <p class="hero-stat-label">Events / Semester</p>
+                    <p class="hero-stat-value">10+ Events</p>
+                </div>
+                <div class="hero-stat">
+                    <p class="hero-stat-label">Technical Domains</p>
+                    <p class="hero-stat-value">Power · Control · IoT</p>
+                </div>
+            </div>
+
+            <p class="hero-card-sub">
+                Follow us on Instagram & our blog to stay updated with announcements, registrations & results.
+            </p>
+        </aside>
+    </section>
+
+    <!-- Auto slideshow banner (homepage) -->
+    <section class="slideshow-section">
+        <div class="container">
+            <div class="slideshow">
+                <!-- Replace background-image URLs with your real images -->
+                <div
+                    class="slide active"
+                    style="background-image: url('images/slideshow/banner1.jpg');"
+                >
+                    <div class="slide-overlay">
+                        <p class="slide-tag">Workshops</p>
+                        <h2 class="slide-title">Hands-on Labs & Practical Learning</h2>
+                    </div>
+                </div>
+
+                <div
+                    class="slide"
+                    style="background-image: url('images/slideshow/banner2.jpg');"
+                >
+                    <div class="slide-overlay">
+                        <p class="slide-tag">Industrial Visits</p>
+                        <h2 class="slide-title">Real-world Exposure to Power Systems</h2>
+                    </div>
+                </div>
+
+                <div
+                    class="slide"
+                    style="background-image: url('images/slideshow/banner3.jpg');"
+                >
+                    <div class="slide-overlay">
+                        <p class="slide-tag">Events & Fests</p>
+                        <h2 class="slide-title">Tech Talks, Hackathons & Competitions</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <span>© <span id="year"></span> SEEE – GVPCE(A). All rights reserved.</span>
+        <div class="footer-social">
+            <span>Connect:</span>
+            <a href="https://www.instagram.com/seee_club_gvpce/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://ieiseee.blogspot.com/" target="_blank" aria-label="Blogspot">
+                <i class="fa-solid fa-blog"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- Popup -->
+<div class="popup-backdrop">
+    <div class="popup">
+        <div class="popup-header">
+            <div>
+                <div class="popup-tag">Announcement</div>
+                <div class="popup-title">Upcoming SEEE Event</div>
+            </div>
+            <button class="popup-close" aria-label="Close popup">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="popup-body">
+            <strong>⚡ Tech Talk / Workshop:</strong> Use this popup to highlight your next event, registration link,
+            or important notice from the club. You can update this text anytime in <code>index.html</code>.
+        </div>
+        <div class="popup-actions">
+            <a href="events.html" class="btn btn-primary popup-primary">
+                View Events
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>

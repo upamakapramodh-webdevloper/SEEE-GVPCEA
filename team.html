@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>SEEE – GVPCE | Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-symbol"><span>SE</span></div>
+            <div class="nav-logo-text">
+                <span>SEEE – GVPCE(A)</span>
+                <span>Society of Electrical & Electronics Engineers</span>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-toggle"><span></span></button>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="page-hero reveal">
+        <h1>Our Team</h1>
+        <p>The mentors, coordinators, and student leaders behind SEEE.</p>
+    </section>
+
+    <!-- FACULTY -->
+    <section class="section reveal">
+        <div class="section-header">
+            <h2 class="section-title">Faculty Coordinators</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="team-avatar">F1</div>
+                <h3 class="team-name">Faculty Name</h3>
+                <p class="team-role">Coordinator</p>
+                <p class="team-meta">EEE Department, GVPCE(A)</p>
+            </div>
+
+            <div class="card">
+                <div class="team-avatar">F2</div>
+                <h3 class="team-name">Faculty Name</h3>
+                <p class="team-role">Co-Coordinator</p>
+                <p class="team-meta">EEE Department, GVPCE(A)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDENT CORE TEAM -->
+    <section class="section reveal">
+        <div class="section-header">
+            <h2 class="section-title">Core Committee</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="team-avatar">P</div>
+                <h3 class="team-name">Student Name</h3>
+                <p class="team-role">President</p>
+                <p class="team-meta">EEE · GVPCE(A)</p>
+            </div>
+
+            <div class="card">
+                <div class="team-avatar">VP</div>
+                <h3 class="team-name">Student Name</h3>
+                <p class="team-role">Vice President</p>
+                <p class="team-meta">EEE · GVPCE(A)</p>
+            </div>
+
+            <div class="card">
+                <div class="team-avatar">GS</div>
+                <h3 class="team-name">Student Name</h3>
+                <p class="team-role">General Secretary</p>
+                <p class="team-meta">EEE · GVPCE(A)</p>
+            </div>
+
+            <div class="card">
+                <div class="team-avatar">T</div>
+                <h3 class="team-name">Student Name</h3>
+                <p class="team-role">Treasurer</p>
+                <p class="team-meta">EEE · GVPCE(A)</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <span>© <span id="year"></span> SEEE – GVPCE(A).</span>
+        <div class="footer-social">
+            <span>Connect:</span>
+            <a href="https://www.instagram.com/seee_club_gvpce/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://ieiseee.blogspot.com/" target="_blank"><i class="fa-solid fa-blog"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>

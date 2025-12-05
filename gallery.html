@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>SEEE – GVPCE | Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body>
+<header>
+    <div class="container navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-symbol">
+                <span>SE</span>
+            </div>
+            <div class="nav-logo-text">
+                <span>SEEE – GVPCE(A)</span>
+                <span>Society of Electrical & Electronics Engineers</span>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<main class="container">
+    <section class="page-hero reveal">
+        <h1>Gallery</h1>
+        <p>Snapshots from our workshops, events and industrial visits.</p>
+    </section>
+
+    <section class="section reveal">
+        <div class="section-header">
+            <h2 class="section-title">Browse by Category</h2>
+            <p class="section-subtitle">Click on a tab to filter photos. Tap any image to view it in fullscreen.</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="gallery-tabs">
+            <button class="gallery-tab active" data-filter="all">All</button>
+            <button class="gallery-tab" data-filter="workshops">Workshops</button>
+            <button class="gallery-tab" data-filter="events">Events</button>
+            <button class="gallery-tab" data-filter="industrial">Industrial Visits</button>
+            <button class="gallery-tab" data-filter="team">Team</button>
+            <button class="gallery-tab" data-filter="posters">Posters</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="gallery-grid">
+            <!-- WORKSHOPS -->
+            <div class="gallery-item" data-category="workshops">
+                <img
+                    src="images/gallery/workshops/workshop_arduino_2025_01.jpg"
+                    alt="Arduino Basics Workshop"
+                    class="gallery-image"
+                    data-title="Arduino Basics Workshop"
+                    data-description="Hands-on Arduino and basic embedded systems session for EEE students."
+                />
+                <span class="gallery-caption">Arduino Workshop – Jan 2025</span>
+            </div>
+
+            <div class="gallery-item" data-category="workshops">
+                <img
+                    src="images/gallery/workshops/workshop_iot_2025_01.jpg"
+                    alt="IoT Bootcamp"
+                    class="gallery-image"
+                    data-title="IoT Bootcamp"
+                    data-description="Introductory IoT bootcamp using microcontrollers and sensors."
+                />
+                <span class="gallery-caption">IoT Bootcamp – Feb 2025</span>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="gallery-item" data-category="events">
+                <img
+                    src="images/gallery/events/event_orientation_2025_01.jpg"
+                    alt="Orientation Day"
+                    class="gallery-image"
+                    data-title="SEEE Orientation"
+                    data-description="Club orientation and introduction for juniors and new members."
+                />
+                <span class="gallery-caption">Orientation – Aug 2025</span>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img
+                    src="images/gallery/events/event_evseminar_2025_01.jpg"
+                    alt="EV Seminar"
+                    class="gallery-image"
+                    data-title="EV Seminar"
+                    data-description="Guest lecture on Electric Vehicles, charging, and opportunities in EEE."
+                />
+                <span class="gallery-caption">EV Seminar – Sep 2025</span>
+            </div>
+
+            <!-- INDUSTRIAL VISITS -->
+            <div class="gallery-item" data-category="industrial">
+                <img
+                    src="images/gallery/industrial/iv_substation_2025_01.jpg"
+                    alt="Substation Visit"
+                    class="gallery-image"
+                    data-title="Substation Visit"
+                    data-description="Students visiting a substation, learning about protection and switchgear."
+                />
+                <span class="gallery-caption">Substation Visit – Oct 2025</span>
+            </div>
+
+            <div class="gallery-item" data-category="industrial">
+                <img
+                    src="images/gallery/industrial/iv_powerplant_2025_01.jpg"
+                    alt="Power Plant Visit"
+                    class="gallery-image"
+                    data-title="Power Plant Visit"
+                    data-description="Industrial visit to a power plant with focus on generators & turbines."
+                />
+                <span class="gallery-caption">Power Plant Visit – Oct 2025</span>
+            </div>
+
+            <!-- TEAM -->
+            <div class="gallery-item" data-category="team">
+                <img
+                    src="images/gallery/team/team_core_2025_01.jpg"
+                    alt="Core Team"
+                    class="gallery-image"
+                    data-title="Core Committee"
+                    data-description="Core student committee of SEEE – GVPCE(A)."
+                />
+                <span class="gallery-caption">Core Committee – 2025</span>
+            </div>
+
+            <div class="gallery-item" data-category="team">
+                <img
+                    src="images/gallery/team/team_faculty_2025_01.jpg"
+                    alt="Faculty Coordinators"
+                    class="gallery-image"
+                    data-title="Faculty Coordinators"
+                    data-description="Faculty mentors and coordinators guiding the club."
+                />
+                <span class="gallery-caption">Faculty with Team</span>
+            </div>
+
+            <!-- POSTERS -->
+            <div class="gallery-item" data-category="posters">
+                <img
+                    src="images/gallery/posters/poster_arduino_2025.jpg"
+                    alt="Arduino Workshop Poster"
+                    class="gallery-image"
+                    data-title="Arduino Workshop Poster"
+                    data-description="Official event poster for Arduino workshop."
+                />
+                <span class="gallery-caption">Arduino Workshop Poster</span>
+            </div>
+
+            <div class="gallery-item" data-category="posters">
+                <img
+                    src="images/gallery/posters/poster_evseminar_2025.jpg"
+                    alt="EV Talk Poster"
+                    class="gallery-image"
+                    data-title="EV Talk Poster"
+                    data-description="Poster for expert talk on Electric Vehicles."
+                />
+                <span class="gallery-caption">EV Seminar Poster</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <span>© <span id="year"></span> SEEE – GVPCE(A). All rights reserved.</span>
+        <div class="footer-social">
+            <span>Connect:</span>
+            <a href="https://www.instagram.com/seee_club_gvpce/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://ieiseee.blogspot.com/" target="_blank">
+                <i class="fa-solid fa-blog"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox">
+    <div class="lightbox-inner">
+        <button class="lightbox-close" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img src="" alt="" class="lightbox-img" />
+        <div class="lightbox-text">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-desc"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>

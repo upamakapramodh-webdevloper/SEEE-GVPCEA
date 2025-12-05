@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>SEEE – GVPCE | About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-symbol"><span>SE</span></div>
+            <div class="nav-logo-text">
+                <span>SEEE – GVPCE(A)</span>
+                <span>Society of Electrical & Electronics Engineers</span>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-toggle"><span></span></button>
+    </div>
+</header>
+
+<!-- ABOUT PAGE -->
+<main class="container">
+    <section class="page-hero reveal">
+        <h1>About SEEE</h1>
+        <p>The official student club of Electrical & Electronics Engineering, GVPCE(A).</p>
+    </section>
+
+    <section class="section reveal">
+        <div class="section-header">
+            <h2 class="section-title">Who We Are</h2>
+            <p class="section-subtitle">Empowering students through technology, innovation, and teamwork.</p>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>To create a dynamic environment where students gain hands-on experience, explore advanced technologies, and grow as professionals in Electrical & Electronics Engineering.</p>
+            </div>
+
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>To organize workshops, industrial visits, technical events, and training programs that bridge the gap between academics and real-world engineering.</p>
+            </div>
+
+            <div class="card">
+                <h3>What We Do</h3>
+                <ul style="margin-top: .4rem; color: #9ca3af; font-size: .9rem;">
+                    <li>⚡ Technical Workshops</li>
+                    <li>⚙️ Industrial Visits</li>
+                    <li>💡 Hackathons & Competitions</li>
+                    <li>📘 Technical Talks & Seminars</li>
+                    <li>🤝 Student Collaboration & Leadership</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-inner">
+        <span>© <span id="year"></span> SEEE – GVPCE(A).</span>
+        <div class="footer-social">
+            <span>Connect:</span>
+            <a href="https://www.instagram.com/seee_club_gvpce/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://ieiseee.blogspot.com/" target="_blank"><i class="fa-solid fa-blog"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>

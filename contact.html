@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>SEEE – GVPCE | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-symbol"><span>SE</span></div>
+            <div class="nav-logo-text">
+                <span>SEEE – GVPCE(A)</span>
+                <span>Society of Electrical & Electronics Engineers</span>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-toggle"><span></span></button>
+    </div>
+</header>
+
+<main class="container">
+    <section class="page-hero reveal">
+        <h1>Contact & Join Us</h1>
+        <p>Have questions? Want to join SEEE? Reach out anytime.</p>
+    </section>
+
+    <section class="section reveal">
+        <div class="contact-wrapper">
+
+            <div class="contact-form">
+                <h2 class="section-title">Send a Message</h2>
+
+                <form action="mailto:seee@gvpce.ac.in" method="post" enctype="text/plain">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" name="Name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="roll">Roll Number</label>
+                        <input id="roll" name="Roll" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="Email" type="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="Message"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <aside class="contact-info">
+                <div class="contact-pill"><i class="fa-solid fa-location-dot"></i>EEE Department</div>
+
+                <h3>Address</h3>
+                <p>GVP College of Engineering (Autonomous)<br>Madhurawada, Visakhapatnam</p>
+
+                <h3>Official Email</h3>
+                <p><a href="mailto:seee@gvpce.ac.in" style="color:#f5c542;">seee@gvpce.ac.in</a></p>
+
+                <h3>Follow Us</h3>
+                <p>Instagram & blog updated regularly with event info.</p>
+            </aside>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <span>© <span id="year"></span> SEEE – GVPCE(A).</span>
+        <div class="footer-social">
+            <span>Connect:</span>
+            <a href="https://www.instagram.com/seee_club_gvpce/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://ieiseee.blogspot.com/" target="_blank"><i class="fa-solid fa-blog"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
