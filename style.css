@@ -1004,18 +1004,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-.hero{
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-padding: 80px 40px;
-border-radius: 20px;
-}
-
-.slide{
-height: 400px;
-background-size: cover;
-background-position: center;
 border-radius: 20px;
 position: relative;
 }
+
