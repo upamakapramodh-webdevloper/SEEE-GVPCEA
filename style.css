@@ -447,19 +447,16 @@ header {
 
 /* Team cards */
 
-.team-avatar {
-    width: 64px;
-    height: 64px;
-    border-radius: 999px;
-    background: radial-gradient(circle at top left, var(--accent-gold), var(--accent-blue));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    color: #020617;
-    margin-bottom: 0.6rem;
+.team-avatar{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+display:block;
+margin:auto;
+margin-bottom:10px;
+border:3px solid #f5c542;
 }
-
 .team-name {
     font-weight: 600;
     margin-bottom: 0.15rem;
@@ -1007,4 +1004,5 @@ footer {
 border-radius: 20px;
 position: relative;
 }
+
 
