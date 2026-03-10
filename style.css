@@ -292,15 +292,14 @@ box-shadow:0 8px 20px rgba(212,175,55,0.4);
 .btn-primary:hover{
 background:#c89b2f;
 }
-.btn-outline {
-    background: linear-gradient(140deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.98));
-    color: var(--text-main);
-    border-color: rgba(148, 163, 184, 0.7);
+.btn-outline{
+background:#ffffff;
+color:var(--text-main);
+border:1px solid var(--border-soft);
 }
 
-.btn-outline:hover {
-    border-color: var(--accent-gold);
-    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.9);
+.btn-outline:hover{
+border-color:var(--accent-gold);
 }
 
 /* Hero meta */
@@ -1043,3 +1042,4 @@ color:#000;
 .theme-btn:hover{
 opacity:0.8;
 }
+
