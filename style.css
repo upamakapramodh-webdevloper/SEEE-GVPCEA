@@ -539,18 +539,17 @@ border:3px solid #f5c542;
     gap: 1.5rem;
 }
 
-.contact-form {
-    background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), rgba(15, 23, 42, 0.98));
-    border-radius: 1.6rem;
-    padding: 1.4rem 1.3rem;
-    border: 1px solid var(--border-soft);
-    box-shadow: var(--shadow-soft);
+.contact-form{
+background:#ffffff;
+border-radius:1.6rem;
+padding:1.4rem 1.3rem;
+border:1px solid var(--border-soft);
+box-shadow:var(--shadow-soft);
 }
 
-.form-group {
-    margin-bottom: 0.9rem;
+.form-group{
+margin-bottom:0.9rem;
 }
-
 label {
     display: block;
     font-size: 0.8rem;
@@ -1042,5 +1041,6 @@ color:#000;
 .theme-btn:hover{
 opacity:0.8;
 }
+
 
 
