@@ -1,24 +1,27 @@
-/* LIGHT THEME (DEFAULT) */
+:root {
 
-:root{
+/* BACKGROUND */
+
 --bg-dark:#ffffff;
---bg-card:#f3f4f6;
---accent-gold:#f5c542;
---accent-blue:#2563eb;
---text-main:#111827;
---text-muted:#4b5563;
-}
+--bg-card:#ffffff;
 
-/* DARK THEME */
+/* GOLD COLOR */
 
-body.dark-mode{
+--accent-gold:#d4af37;
+--accent-blue:#d4af37;
 
---bg-dark:#050816;
---bg-card:#0b1020;
---accent-gold:#f5c542;
---accent-blue:#2563eb;
---text-main:#f9fafb;
---text-muted:#9ca3af;
+/* TEXT */
+
+--text-main:#111111;
+--text-muted:#555555;
+
+/* BORDER */
+
+--border-soft:rgba(0,0,0,0.08);
+
+/* SHADOW */
+
+--shadow-soft:0 10px 25px rgba(0,0,0,0.08);
 
 }
 :root {
@@ -1129,6 +1132,7 @@ cursor:pointer;
 font-size:16px;
 margin-left:10px;
 }
+
 
 
 
