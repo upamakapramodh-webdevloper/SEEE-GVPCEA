@@ -1029,21 +1029,7 @@ height:100%;
 background:rgba(255,255,255,0.6);
 z-index:-1;
 }
-.theme-btn{
-border:none;
-background:var(--gold);
-color:#000;
-padding:6px 12px;
-border-radius:6px;
-cursor:pointer;
-font-size:16px;
-margin-left:10px;
-}
-
-.theme-btn:hover{
-opacity:0.8;
-}
-.theme-btn{
+'.theme-btn{
 background:var(--accent-gold);
 border:none;
 padding:6px 12px;
@@ -1051,59 +1037,9 @@ border-radius:6px;
 cursor:pointer;
 font-size:16px;
 margin-left:10px;
+color:#000;
 }
 
 .theme-btn:hover{
 opacity:0.8;
 }
-/* LIGHT MODE (DEFAULT) */
-
-body{
-background:#ffffff;
-color:#111;
-}
-
-/* DARK MODE */
-
-body.dark-mode{
-background:#020617;
-color:#f1f5f9;
-}
-
-/* CARD DARK MODE */
-
-body.dark-mode .card{
-background:#0f172a;
-}
-
-/* HERO DARK MODE */
-
-body.dark-mode .hero{
-background:#020617;
-}
-
-/* BUTTON STYLE */
-
-.theme-btn{
-background:#f5c542;
-border:none;
-padding:6px 12px;
-border-radius:6px;
-cursor:pointer;
-font-size:16px;
-margin-left:10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
