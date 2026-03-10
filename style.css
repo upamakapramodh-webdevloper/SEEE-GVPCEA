@@ -562,19 +562,19 @@ textarea {
     width: 100%;
     padding: 0.55rem 0.75rem;
     border-radius: 0.85rem;
-    border: 1px solid rgba(148, 163, 184, 0.7);
-    background: rgba(15, 23, 42, 0.96);
+    border: 1px solid var(--border-soft);
+    background:#ffffff;
     color: var(--text-main);
     font-size: 0.86rem;
     outline: none;
-    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 input:focus,
 textarea:focus {
     border-color: var(--accent-gold);
-    background: rgba(15, 23, 42, 0.99);
-    box-shadow: 0 0 0 1px rgba(245, 197, 66, 0.4);
+    background:#ffffff;
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
 }
 
 textarea {
@@ -1038,4 +1038,5 @@ color:#000;
 .theme-btn:hover{
 opacity:0.8;
 }
+
 
