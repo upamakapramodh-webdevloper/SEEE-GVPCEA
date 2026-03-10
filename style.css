@@ -1,11 +1,11 @@
-:root {
+:root{
 
 /* BACKGROUND */
 
 --bg-dark:#ffffff;
 --bg-card:#ffffff;
 
-/* GOLD COLOR */
+/* GOLD ACCENT */
 
 --accent-gold:#d4af37;
 --accent-blue:#d4af37;
@@ -13,7 +13,7 @@
 /* TEXT */
 
 --text-main:#111111;
---text-muted:#555555;
+--text-muted:#666666;
 
 /* BORDER */
 
@@ -23,21 +23,16 @@
 
 --shadow-soft:0 10px 25px rgba(0,0,0,0.08);
 
-}
-:root {
-    --bg-dark: #050816;
-    --bg-card: #0b1020;
-    --accent-gold: #f5c542;
-    --accent-blue: #2563eb;
-    --text-main: #f9fafb;
-    --text-muted: #9ca3af;
-    --border-soft: rgba(148, 163, 184, 0.4);
-    --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.45);
-    --radius-xl: 1.5rem;
-    --transition-fast: 0.25s ease;
-    --transition-med: 0.4s ease;
-}
+/* RADIUS */
 
+--radius-xl:1.5rem;
+
+/* TRANSITIONS */
+
+--transition-fast:0.25s ease;
+--transition-med:0.4s ease;
+
+}
 *,
 *::before,
 *::after {
@@ -1132,6 +1127,7 @@ cursor:pointer;
 font-size:16px;
 margin-left:10px;
 }
+
 
 
 
