@@ -769,7 +769,7 @@ background:#fafafa;
     border-radius: 1.6rem;
     overflow: hidden;
     border: 1px solid rgba(148, 163, 184, 0.6);
-    background: radial-gradient(circle at top, rgba(15, 23, 42, 0.98), rgba(2, 6, 23, 1));
+    background: #ffffff;
     box-shadow: 0 22px 50px rgba(0, 0, 0, 0.85);
     margin-top: 0.8rem;
 }
@@ -795,7 +795,7 @@ background:#fafafa;
 .slide-overlay {
     width: 100%;
     padding: 1.1rem 1.3rem;
-    background: linear-gradient(to top, rgba(15, 23, 42, 0.95), transparent);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9), transparent);
 }
 
 .slide-tag {
@@ -827,7 +827,7 @@ background:#fafafa;
     font-size: 0.78rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    background: rgba(15, 23, 42, 0.96);
+    background: #ffffff;
     color: var(--text-muted);
     cursor: pointer;
     transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
@@ -850,7 +850,7 @@ background:#fafafa;
 .lightbox {
     position: fixed;
     inset: 0;
-    background: radial-gradient(circle at top, rgba(15, 23, 42, 0.96), rgba(0, 0, 0, 0.98));
+    background: rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1040,6 +1040,7 @@ color:#000;
 .theme-btn:hover{
 opacity:0.8;
 }
+
 
 
 
