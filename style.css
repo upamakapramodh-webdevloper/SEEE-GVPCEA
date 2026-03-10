@@ -423,41 +423,18 @@ backdrop-filter:blur(10px);
 
 /* Cards */
 
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 1.3rem;
+.card{
+background:#ffffff;
+border-radius:var(--radius-xl);
+padding:1.2rem 1.2rem 1.25rem;
+border:1px solid var(--border-soft);
+box-shadow:var(--shadow-soft);
+transition:transform var(--transition-med);
 }
 
-.card {
-    background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), rgba(15, 23, 42, 0.98));
-    border-radius: var(--radius-xl);
-    padding: 1.2rem 1.2rem 1.25rem;
-    border: 1px solid var(--border-soft);
-    box-shadow: var(--shadow-soft);
-    position: relative;
-    overflow: hidden;
-    transform: translateY(0);
-    transition: transform var(--transition-med), box-shadow var(--transition-med), border-color var(--transition-med);
-}
-
-.card::before {
-    content: "";
-    position: absolute;
-    inset: -40%;
-    background: radial-gradient(circle at top, rgba(245, 197, 66, 0.21), transparent 60%);
-    opacity: 0;
-    transition: opacity var(--transition-med);
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(245, 197, 66, 0.6);
-    box-shadow: 0 24px 44px rgba(0, 0, 0, 0.85);
-}
-
-.card:hover::before {
-    opacity: 1;
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
 }
 
 /* Team cards */
@@ -1121,6 +1098,7 @@ cursor:pointer;
 font-size:16px;
 margin-left:10px;
 }
+
 
 
 
