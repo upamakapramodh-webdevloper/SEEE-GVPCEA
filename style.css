@@ -291,6 +291,8 @@ box-shadow:0 8px 20px rgba(212,175,55,0.4);
 
 .btn-primary:hover{
 background:#c89b2f;
+box-shadow:0 10px 25px rgba(212,175,55,0.5);
+transform:translateY(-1px);
 }
 .btn-outline{
 background:#ffffff;
@@ -943,7 +945,7 @@ background:#fafafa;
         position: absolute;
         top: calc(100% + 6px);
         right: 4%;
-        background: radial-gradient(circle at top, rgba(15, 23, 42, 0.98), rgba(2, 6, 23, 0.98));
+        background:#ffffff;
         padding: 0.7rem 1rem;
         border-radius: 16px;
         border: 1px solid rgba(148, 163, 184, 0.7);
@@ -1038,6 +1040,7 @@ color:#000;
 .theme-btn:hover{
 opacity:0.8;
 }
+
 
 
 
