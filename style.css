@@ -61,20 +61,14 @@ body {
 
 /* ================= HEADER / NAVBAR ================= */
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 40;
-    backdrop-filter: blur(18px);
-    background: linear-gradient(
-        to bottom,
-        rgba(15, 23, 42, 0.96),
-        rgba(15, 23, 42, 0.92),
-        transparent
-    );
-    border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+header{
+position:sticky;
+top:0;
+z-index:40;
+background:#ffffff;
+border-bottom:1px solid var(--border-soft);
+backdrop-filter:blur(10px);
 }
-
 .navbar {
     display: flex;
     align-items: center;
@@ -1127,6 +1121,7 @@ cursor:pointer;
 font-size:16px;
 margin-left:10px;
 }
+
 
 
 
