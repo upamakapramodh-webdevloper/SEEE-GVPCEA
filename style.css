@@ -473,7 +473,7 @@ border:3px solid #f5c542;
     overflow: hidden;
     border: 1px solid rgba(148, 163, 184, 0.5);
     box-shadow: var(--shadow-soft);
-    background: #020617;
+    background: #ffffff;
 }
 
 .gallery-item img {
@@ -1042,4 +1042,5 @@ color:#000;
 .theme-btn:hover{
 opacity:0.8;
 }
+
 
