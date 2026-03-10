@@ -161,3 +161,17 @@ slides[currentSlide].classList.add("active");
 }
 
 setInterval(changeSlide,5000);
+const toggle = document.getElementById("theme-toggle");
+
+toggle.addEventListener("click",function(){
+
+document.body.classList.toggle("dark-mode");
+
+if(document.body.classList.contains("dark-mode")){
+toggle.innerHTML="☀️";
+}else{
+toggle.innerHTML="🌙";
+}
+
+});
+
