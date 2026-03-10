@@ -1,3 +1,26 @@
+/* LIGHT THEME (DEFAULT) */
+
+:root{
+--bg-dark:#ffffff;
+--bg-card:#f3f4f6;
+--accent-gold:#f5c542;
+--accent-blue:#2563eb;
+--text-main:#111827;
+--text-muted:#4b5563;
+}
+
+/* DARK THEME */
+
+body.dark-mode{
+
+--bg-dark:#050816;
+--bg-card:#0b1020;
+--accent-gold:#f5c542;
+--accent-blue:#2563eb;
+--text-main:#f9fafb;
+--text-muted:#9ca3af;
+
+}
 :root {
     --bg-dark: #050816;
     --bg-card: #0b1020;
@@ -1069,5 +1092,6 @@ margin-left:10px;
 .theme-btn:hover{
 opacity:0.8;
 }
+
 
 
