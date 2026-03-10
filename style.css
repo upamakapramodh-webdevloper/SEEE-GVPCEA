@@ -1056,5 +1056,18 @@ margin-left:10px;
 .theme-btn:hover{
 opacity:0.8;
 }
+.theme-btn{
+background:var(--accent-gold);
+border:none;
+padding:6px 12px;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+margin-left:10px;
+}
+
+.theme-btn:hover{
+opacity:0.8;
+}
 
 
