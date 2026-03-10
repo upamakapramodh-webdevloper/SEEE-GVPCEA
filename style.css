@@ -1042,5 +1042,19 @@ height:100%;
 background:rgba(0,0,0,0.6);
 z-index:-1;
 }
+.theme-btn{
+border:none;
+background:var(--gold);
+color:#000;
+padding:6px 12px;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+margin-left:10px;
+}
+
+.theme-btn:hover{
+opacity:0.8;
+}
 
 
