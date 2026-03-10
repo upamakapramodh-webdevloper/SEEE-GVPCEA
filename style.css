@@ -660,7 +660,7 @@ background:#fafafa;
 .popup-backdrop {
     position: fixed;
     inset: 0;
-    background: radial-gradient(circle at top, rgba(15, 23, 42, 0.9), rgba(0, 0, 0, 0.95));
+    background: radial-gradient(0,0,0,0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -677,7 +677,7 @@ background:#fafafa;
 
 .popup {
     width: min(420px, 92%);
-    background: radial-gradient(circle at top left, rgba(245, 197, 66, 0.14), rgba(15, 23, 42, 0.98));
+    background:#ffffff;
     border-radius: 1.7rem;
     padding: 1.3rem 1.3rem 1.2rem;
     border: 1px solid rgba(248, 250, 252, 0.12);
@@ -728,8 +728,8 @@ background:#fafafa;
     border-radius: 999px;
     width: 28px;
     height: 28px;
-    border: 1px solid rgba(148, 163, 184, 0.7);
-    background: rgba(15, 23, 42, 0.98);
+    border: 1px solid var(--border-soft);
+    background: #ffffff;
     color: var(--text-main);
     cursor: pointer;
     display: inline-flex;
@@ -1040,6 +1040,7 @@ color:#000;
 .theme-btn:hover{
 opacity:0.8;
 }
+
 
 
 
