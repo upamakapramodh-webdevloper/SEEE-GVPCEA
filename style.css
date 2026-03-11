@@ -591,6 +591,9 @@ scroll-behavior:smooth;
 padding-bottom:8px;
 }
 
+scroll-snap-type:x mandatory;   /* improvement */
+}
+
 /* HIDE SCROLLBAR */
 
 .event-images::-webkit-scrollbar{
@@ -611,6 +614,9 @@ object-fit:cover;
 border-radius:12px;
 cursor:pointer;
 transition:transform .35s ease, box-shadow .35s ease;
+}
+
+scroll-snap-align:start;   /* improvement */
 }
 
 /* HOVER EFFECT */
@@ -1179,6 +1185,7 @@ margin-top:25px;
 }
 
 }
+
 
 
 
