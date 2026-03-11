@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ========== Gallery tabs ==========
     const tabButtons = document.querySelectorAll(".gallery-tab");
-    const galleryItems = document.querySelectorAll(".gallery-item");
+    const galleryItems = document.querySelectorAll(".event-album");
 
     if (tabButtons.length && galleryItems.length) {
 
@@ -222,3 +222,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
