@@ -81,11 +81,11 @@ align-items:center;
 gap:0.6rem;
 text-decoration:none;
 }
-.nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    text-decoration: none;
+.club-logo{
+width:38px;
+height:38px;
+object-fit:contain;
+border-radius:50%;
 }
 
 .nav-logo-symbol {
@@ -1103,6 +1103,7 @@ margin-top:25px;
 }
 
 }
+
 
 
 
