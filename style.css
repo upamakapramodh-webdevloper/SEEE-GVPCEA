@@ -75,7 +75,12 @@ backdrop-filter:blur(10px);
     justify-content: space-between;
     padding: 0.8rem 0;
 }
-
+.nav-logo {
+display:flex;
+align-items:center;
+gap:0.6rem;
+text-decoration:none;
+}
 .nav-logo {
     display: flex;
     align-items: center;
@@ -1098,6 +1103,7 @@ margin-top:25px;
 }
 
 }
+
 
 
 
