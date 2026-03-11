@@ -203,23 +203,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ========== Theme Toggle ==========
-    const themeToggle = document.getElementById("theme-toggle");
+const themeToggle = document.getElementById("theme-toggle");
 
-    if (themeToggle) {
+if (themeToggle) {
 
-        themeToggle.addEventListener("click", () => {
-
-            document.body.classList.toggle("dark-mode");
-
-            if(document.body.classList.contains("dark-mode")){
-                themeToggle.innerHTML = "☀️";
-            }else{
-                themeToggle.innerHTML = "🌙";
-            }
-
-        });
-
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        themeToggle.innerHTML = "☀️";
     }
 
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            themeToggle.innerHTML = "☀️";
+            localStorage.setItem("theme", "dark");
+        } else {
+            themeToggle.innerHTML = "🌙";
+            localStorage.setItem("theme", "light");
+        }
+    });
+}
+
 });
+
 
