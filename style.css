@@ -33,6 +33,19 @@
 --transition-med:0.4s ease;
 
 }
+body.dark-mode{
+
+--bg-dark:#0f172a;
+--bg-card:#1e293b;
+
+--text-main:#f1f5f9;
+--text-muted:#94a3b8;
+
+--border-soft:rgba(255,255,255,0.08);
+
+--shadow-soft:0 10px 25px rgba(0,0,0,0.6);
+
+}
 *,
 *::before,
 *::after {
