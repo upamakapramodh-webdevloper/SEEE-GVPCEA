@@ -60,7 +60,7 @@ html {
 
 body {
     font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background:#ffffff;
+    background:var(--text-main);
     color: var(--text-main);
     line-height: 1.6;
     min-height: 100vh;
