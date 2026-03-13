@@ -1041,6 +1041,38 @@ background:#fafafa;
     background: rgba(30, 64, 175, 0.95);
     transform: translateY(-1px);
 }
+.lightbox-prev,
+.lightbox-next{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:rgba(0,0,0,0.6);
+color:#fff;
+border:none;
+width:40px;
+height:40px;
+border-radius:50%;
+cursor:pointer;
+font-size:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:10;
+}
+
+.lightbox-prev{
+left:10px;
+}
+
+.lightbox-next{
+right:10px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover{
+background:var(--accent-gold);
+color:#000;
+}
 
 /* ================= RESPONSIVE ================= */
 
