@@ -144,62 +144,96 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ========== Lightbox for gallery ==========
-    const lightbox = document.querySelector(".lightbox");
+   const lightbox = document.querySelector(".lightbox");
 
-    if (lightbox) {
+if (lightbox) {
 
-        const lightboxImg = lightbox.querySelector(".lightbox-img");
-        const lightboxTitle = lightbox.querySelector("#lightbox-title");
-        const lightboxDesc = lightbox.querySelector("#lightbox-desc");
-        const lightboxClose = lightbox.querySelector(".lightbox-close");
+const images = document.querySelectorAll(".gallery-image");
+const lightboxImg = lightbox.querySelector(".lightbox-img");
+const lightboxTitle = lightbox.querySelector("#lightbox-title");
+const lightboxDesc = lightbox.querySelector("#lightbox-desc");
+const lightboxClose = lightbox.querySelector(".lightbox-close");
+const prevBtn = lightbox.querySelector(".lightbox-prev");
+const nextBtn = lightbox.querySelector(".lightbox-next");
 
-        const openLightbox = (src, title, desc) => {
+let currentIndex = 0;
 
-            lightboxImg.src = src;
-            lightboxTitle.textContent = title || "";
-            lightboxDesc.textContent = desc || "";
+function showImage(index){
 
-            lightbox.classList.add("show");
+const img = images[index];
 
-        };
+lightboxImg.src = img.src;
+lightboxTitle.textContent = img.dataset.title || img.alt || "";
+lightboxDesc.textContent = img.dataset.description || "";
 
-        const closeLightbox = () => {
+}
 
-            lightbox.classList.remove("show");
-            lightboxImg.src = "";
+images.forEach((img,index)=>{
 
-        };
+img.addEventListener("click",()=>{
 
-        document.querySelectorAll(".gallery-image").forEach((img) => {
+currentIndex = index;
 
-            img.addEventListener("click", () => {
+showImage(currentIndex);
 
-                const src = img.getAttribute("src");
-                const title = img.dataset.title || img.alt || "";
-                const desc = img.dataset.description || "";
+lightbox.classList.add("show");
 
-                openLightbox(src, title, desc);
+});
 
-            });
+});
 
-        });
+function closeLightbox(){
 
-        lightboxClose?.addEventListener("click", closeLightbox);
+lightbox.classList.remove("show");
+lightboxImg.src="";
 
-        lightbox.addEventListener("click", (e) => {
+}
 
-            if (e.target === lightbox) closeLightbox();
+lightboxClose?.addEventListener("click",closeLightbox);
 
-        });
+nextBtn?.addEventListener("click",()=>{
 
-        document.addEventListener("keydown", (e) => {
+currentIndex = (currentIndex + 1) % images.length;
+showImage(currentIndex);
 
-            if (e.key === "Escape" && lightbox.classList.contains("show")) {
-                closeLightbox();
-            }
+});
 
-        });
+prevBtn?.addEventListener("click",()=>{
 
+currentIndex = (currentIndex - 1 + images.length) % images.length;
+showImage(currentIndex);
+
+});
+
+lightbox.addEventListener("click",(e)=>{
+
+if(e.target===lightbox){
+closeLightbox();
+}
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+if(!lightbox.classList.contains("show")) return;
+
+if(e.key==="ArrowRight"){
+currentIndex = (currentIndex + 1) % images.length;
+showImage(currentIndex);
+}
+
+if(e.key==="ArrowLeft"){
+currentIndex = (currentIndex - 1 + images.length) % images.length;
+showImage(currentIndex);
+}
+
+if(e.key==="Escape"){
+closeLightbox();
+}
+
+});
+
+}
     }
 
     // ========== Theme Toggle ==========
