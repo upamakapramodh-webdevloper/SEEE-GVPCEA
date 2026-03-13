@@ -342,7 +342,8 @@ padding:1.6rem 1.5rem 1.4rem;
 border:1px solid var(--border-soft);
 box-shadow:var(--shadow-soft);
 position:relative;
-z-index:1;
+z-index:2;
+max-width:420px;
 }
 .hero-card-tag {
     font-size: 0.7rem;
