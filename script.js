@@ -262,8 +262,7 @@ showImage(currentIndex);
 });
 
 }
-    }
-
+    
     // ========== Theme Toggle ==========
 const themeToggle = document.getElementById("theme-toggle");
 
