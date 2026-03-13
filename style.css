@@ -1073,6 +1073,10 @@ right:10px;
 background:var(--accent-gold);
 color:#000;
 }
+.lightbox-prev:hover,
+.lightbox-next:hover{
+transform:translateY(-50%) scale(1.1);
+}
 
 /* ================= RESPONSIVE ================= */
 
