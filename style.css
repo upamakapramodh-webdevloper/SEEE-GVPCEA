@@ -67,6 +67,7 @@ body {
 }
 body.dark-mode header{
 background:rgba(15,23,42,0.7);
+backdrop-filter:blur(12px);
 }
 body,
 .card,
@@ -622,7 +623,8 @@ gap:12px;
 overflow-x:auto;
 scroll-behavior:smooth;
 padding-bottom:8px;
-scroll-snap-type:x mandatory;   /* improvement */
+scroll-snap-type:x mandatory; 
+scrollbar-width: thin;
 }
 
 /* HIDE SCROLLBAR */
