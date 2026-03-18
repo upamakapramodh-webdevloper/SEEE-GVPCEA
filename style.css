@@ -1281,4 +1281,51 @@ transition:background 0.4s ease,color 0.4s ease;
   <div class="loader-circle"></div>
   <p>SEEE – GVPCE(A)</p>
 </div>
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.8);
+backdrop-filter:blur(10px);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+transition:opacity 0.5s ease, visibility 0.5s ease;
+}
 
+.loader-content{
+text-align:center;
+}
+
+.loader-circle{
+width:55px;
+height:55px;
+border:4px solid rgba(0,0,0,0.1);
+border-top:4px solid var(--accent-gold);
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin:auto;
+margin-bottom:12px;
+}
+
+#loader h2{
+color:var(--accent-gold);
+font-size:20px;
+}
+
+#loader p{
+font-size:14px;
+color:var(--text-muted);
+}
+
+@keyframes spin{
+to{ transform:rotate(360deg); }
+}
+
+#loader.hide{
+opacity:0;
+visibility:hidden;
+}
