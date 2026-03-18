@@ -345,7 +345,7 @@ z-index:1;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-primary{
@@ -356,8 +356,8 @@ box-shadow:0 8px 20px rgba(212,175,55,0.4);
 
 .btn-primary:hover{
 background:#c89b2f;
-box-shadow:0 10px 25px rgba(212,175,55,0.5);
-transform:translateY(-1px);
+box-shadow:0 12px 30px rgba(212,175,55,0.6);
+transform:translateY(-3px)scale(1.03);
 }
 .btn-outline{
 background:var(--bg-card);
@@ -367,6 +367,12 @@ border:1px solid var(--border-soft);
 
 .btn-outline:hover{
 border-color:var(--accent-gold);
+background:rgba(212,175,55,0.1);
+transform:translateY(-3px);
+}
+
+.btn:active{
+transform:scale(0.96);
 }
 
 /* Hero meta */
