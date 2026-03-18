@@ -54,6 +54,10 @@ body.dark-mode{
     padding: 0;
 }
 
+*{
+transition:background 0.3s ease, color 0.3s ease;
+}
+
 html {
     scroll-behavior: smooth;
 }
