@@ -1,19 +1,23 @@
-document.body.classList.add("loading");
+document.addEventListener("DOMContentLoaded", () => {
 
-window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
+    // LOCK SCROLL
+    document.body.classList.add("loading");
 
-    if(loader){
-        loader.classList.add("hide");
-    }
+    // LOADER
+    window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
 
-    document.body.classList.remove("loading");
-});
+        if(loader){
+            loader.classList.add("hide");
+        }
 
-// fallback safety
-setTimeout(() => {
-    document.body.classList.remove("loading");
-}, 3000);
+        document.body.classList.remove("loading");
+    });
+
+    // fallback safety
+    setTimeout(() => {
+        document.body.classList.remove("loading");
+    }, 3000);
 
     // ========== Mobile nav toggle ==========
     const menuToggle = document.querySelector(".menu-toggle");
