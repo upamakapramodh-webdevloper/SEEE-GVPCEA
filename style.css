@@ -1277,10 +1277,6 @@ body{
 transition:background 0.4s ease,color 0.4s ease;
 }
 
-<div id="loader">
-  <div class="loader-circle"></div>
-  <p>SEEE – GVPCE(A)</p>
-</div>
 #loader{
 position:fixed;
 top:0;
