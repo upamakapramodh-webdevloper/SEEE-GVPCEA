@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    // Loader
+window.addEventListener("load", () => {
+document.getElementById("loader").classList.add("hide");
+});
+
     // ========== Mobile nav toggle ==========
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
