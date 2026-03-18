@@ -69,6 +69,9 @@ body {
     line-height: 1.6;
     min-height: 100vh;
 }
+body.loading{
+overflow:hidden;
+}
 body.dark-mode header{
 background:rgba(15,23,42,0.7);
 backdrop-filter:blur(12px);
