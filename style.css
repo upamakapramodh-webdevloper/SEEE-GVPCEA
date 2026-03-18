@@ -65,6 +65,9 @@ body {
     line-height: 1.6;
     min-height: 100vh;
 }
+body.dark-mode header{
+background:rgba(15,23,42,0.7);
+}
 body,
 .card,
 .hero-card,
@@ -87,9 +90,16 @@ header{
 position:sticky;
 top:0;
 z-index:40;
-background:#ffffff;
+
+/* Glass effect */
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(12px);
+
+/* Border */
 border-bottom:1px solid var(--border-soft);
-backdrop-filter:blur(10px);
+
+/* Smooth effect */
+transition:background 0.3s ease, backdrop-filter 0.3s ease;
 }
 .navbar {
     display: flex;
@@ -160,7 +170,7 @@ border-radius:50%;
     color: var(--text-muted);
     position: relative;
     padding-bottom: 0.15rem;
-    transition: color var(--transition-fast);
+    transition: color 0.3s ease;
 }
 
 .nav-links a::after {
@@ -176,7 +186,7 @@ border-radius:50%;
 }
 
 .nav-links a:hover {
-    color: var(--text-main);
+    color: var(--accent-gold);
 }
 
 .nav-links a:hover::after {
