@@ -1,13 +1,17 @@
-// ===== LOADER (BEST POSITION) =====
+// LOCK SCROLL INITIALLY
+document.body.classList.add("loading");
+
+// REMOVE LOADER AFTER PAGE LOAD
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
+
     if(loader){
         loader.classList.add("hide");
     }
-    document.body.classList.add("loading");
-});
-document.addEventListener("DOMContentLoaded", () => {
-    
+
+    // 🔥 IMPORTANT LINE (you may have missed this)
+    document.body.classList.remove("loading");
+});    
 
     // ========== Mobile nav toggle ==========
     const menuToggle = document.querySelector(".menu-toggle");
