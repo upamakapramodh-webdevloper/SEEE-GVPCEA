@@ -1,7 +1,5 @@
-// LOCK SCROLL INITIALLY
 document.body.classList.add("loading");
 
-// REMOVE LOADER AFTER PAGE LOAD
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
 
@@ -9,9 +7,13 @@ window.addEventListener("load", () => {
         loader.classList.add("hide");
     }
 
-    // 🔥 IMPORTANT LINE (you may have missed this)
     document.body.classList.remove("loading");
-});    
+});
+
+// fallback safety
+setTimeout(() => {
+    document.body.classList.remove("loading");
+}, 3000);
 
     // ========== Mobile nav toggle ==========
     const menuToggle = document.querySelector(".menu-toggle");
