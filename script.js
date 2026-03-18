@@ -1,23 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // LOCK SCROLL
     document.body.classList.add("loading");
 
-    // LOADER
-    window.addEventListener("load", () => {
-        const loader = document.getElementById("loader");
+    const loader = document.getElementById("loader");
 
+    // Fast hide (instead of waiting for images)
+    setTimeout(() => {
         if(loader){
             loader.classList.add("hide");
         }
-
         document.body.classList.remove("loading");
-    });
+    }, 1500);
 
-    // fallback safety
-    setTimeout(() => {
-        document.body.classList.remove("loading");
-    }, 3000);
+});
 
     // ========== Mobile nav toggle ==========
     const menuToggle = document.querySelector(".menu-toggle");
