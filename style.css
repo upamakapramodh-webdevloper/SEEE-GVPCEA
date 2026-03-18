@@ -164,6 +164,7 @@ border-radius:50%;
     align-items: center;
     gap: 1.4rem;
     font-size: 0.9rem;
+    background:var(--bg-card);
 }
 
 .nav-links a {
@@ -254,7 +255,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(255,255,255,0.65);
+background:rgba(255,255,255,0.6);
 z-index:-1;
 }
 
@@ -407,7 +408,7 @@ max-width:420px;
 
 .hero-stat{
 flex:1 1 100px;
-background:#fafafa;
+background:var(--bg-card);
 border-radius:18px;
 padding:0.7rem 0.9rem;
 border:1px solid var(--border-soft);
@@ -883,7 +884,7 @@ background:var(--bg-card);
     width: 28px;
     height: 28px;
     border: 1px solid var(--border-soft);
-    background: #ffffff;
+    background:var(--bg-card);
     color: var(--text-main);
     cursor: pointer;
     display: inline-flex;
