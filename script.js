@@ -305,7 +305,18 @@ if (themeToggle) {
         }
     });
 }
+    
+// ===== (PARALLAX) =====
+window.addEventListener("scroll", () => {
+
+    const scrollY = window.scrollY;
+
+    document.querySelectorAll(".hero, .card, .event-album").forEach(el => {
+
+        const speed = 0.03;
+
+        el.style.transform = `translateY(${scrollY * speed}px)`;
+
+    });
 
 });
-
-
