@@ -1,9 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-    // Loader
+// ===== LOADER (BEST POSITION) =====
 window.addEventListener("load", () => {
-document.getElementById("loader").classList.add("hide");
+    const loader = document.getElementById("loader");
+    if(loader){
+        loader.classList.add("hide");
+    }
+    document.body.classList.add("loading");
 });
+document.addEventListener("DOMContentLoaded", () => {
+    
 
     // ========== Mobile nav toggle ==========
     const menuToggle = document.querySelector(".menu-toggle");
