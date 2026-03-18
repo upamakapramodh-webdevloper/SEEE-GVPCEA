@@ -346,6 +346,7 @@ z-index:1;
     align-items: center;
     gap: 0.4rem;
     transition: all 0.3s ease;
+    backdrop-filter:blur(10px);
 }
 
 .btn-primary{
