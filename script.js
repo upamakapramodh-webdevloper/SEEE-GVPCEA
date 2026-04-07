@@ -342,25 +342,25 @@ yearBtns.forEach(btn => {
 const cursor = document.querySelector(".cursor");
 const follower = document.querySelector(".cursor-follower");
 
+let mouseX = 0, mouseY = 0;
+let posX = 0, posY = 0;
+
 document.addEventListener("mousemove", (e) => {
-  cursor.style.left = e.clientX + "px";
-  cursor.style.top = e.clientY + "px";
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 
-  follower.style.left = e.clientX + "px";
-  follower.style.top = e.clientY + "px";
+  cursor.style.left = mouseX + "px";
+  cursor.style.top = mouseY + "px";
 });
 
-// Hover effects
-const hoverElements = document.querySelectorAll(
-  "a, button, .card, .gallery-image"
-);
+function animate() {
+  posX += (mouseX - posX) * 0.12;
+  posY += (mouseY - posY) * 0.12;
 
-hoverElements.forEach(el => {
-  el.addEventListener("mouseenter", () => {
-    follower.classList.add("cursor-hover");
-  });
+  follower.style.left = posX + "px";
+  follower.style.top = posY + "px";
 
-  el.addEventListener("mouseleave", () => {
-    follower.classList.remove("cursor-hover");
-  });
-});
+  requestAnimationFrame(animate);
+}
+
+animate();
