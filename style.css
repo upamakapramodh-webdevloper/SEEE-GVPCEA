@@ -1395,11 +1395,11 @@ box-shadow:
 }
 
 .gallery-video{
-width:260px;
-height:170px;
+max-width:260px;
 border-radius:12px;
-object-fit:cover;
-cursor:pointer;
+object-fit:contain;
+background:black;
+cursor: default;
 transition:transform .35s ease, box-shadow .35s ease;
 }
 
