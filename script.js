@@ -336,3 +336,31 @@ yearBtns.forEach(btn => {
 
     });
 });
+
+// ===== CUSTOM CURSOR =====
+
+const cursor = document.querySelector(".cursor");
+const follower = document.querySelector(".cursor-follower");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+
+  follower.style.left = e.clientX + "px";
+  follower.style.top = e.clientY + "px";
+});
+
+// Hover effects
+const hoverElements = document.querySelectorAll(
+  "a, button, .card, .gallery-image"
+);
+
+hoverElements.forEach(el => {
+  el.addEventListener("mouseenter", () => {
+    follower.classList.add("cursor-hover");
+  });
+
+  el.addEventListener("mouseleave", () => {
+    follower.classList.remove("cursor-hover");
+  });
+});
