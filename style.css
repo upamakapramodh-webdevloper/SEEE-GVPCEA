@@ -1463,3 +1463,41 @@ border:1px dashed var(--accent-gold);
 border-radius:16px;
 background:rgba(212,175,55,0.05);
 }
+
+/* ===== VIDEO STYLING ===== */
+
+.gallery-video {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  display: block;
+
+  /* Smooth look */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+  /* Animation */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect */
+.gallery-video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px rgba(212,175,55,0.25);
+}
+
+/* Wrapper spacing */
+.video-wrapper,
+.event-album video {
+  margin-bottom: 12px;
+}
+
+/* Optional: glow border on hover */
+.gallery-video:hover {
+  outline: 2px solid rgba(212,175,55,0.4);
+  outline-offset: 3px;
+}
+
+/* Soft background glow */
+.event-album:hover .gallery-video {
+  filter: brightness(1.05);
+}
