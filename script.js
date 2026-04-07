@@ -313,3 +313,26 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+// TEAM YEAR SWITCH
+const yearBtns = document.querySelectorAll(".year-btn");
+const teamSections = document.querySelectorAll(".team-year");
+
+yearBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        yearBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const year = btn.dataset.year;
+
+        teamSections.forEach(section => {
+            section.classList.remove("active");
+
+            if(section.id === "team-" + year){
+                section.classList.add("active");
+            }
+        });
+
+    });
+});
