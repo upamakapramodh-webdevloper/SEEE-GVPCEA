@@ -336,31 +336,3 @@ yearBtns.forEach(btn => {
 
     });
 });
-
-// ===== CUSTOM CURSOR =====
-
-const cursor = document.querySelector(".cursor");
-const follower = document.querySelector(".cursor-follower");
-
-let mouseX = 0, mouseY = 0;
-let posX = 0, posY = 0;
-
-document.addEventListener("mousemove", (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-
-  cursor.style.left = mouseX + "px";
-  cursor.style.top = mouseY + "px";
-});
-
-function animate() {
-  posX += (mouseX - posX) * 0.12;
-  posY += (mouseY - posY) * 0.12;
-
-  follower.style.left = posX + "px";
-  follower.style.top = posY + "px";
-
-  requestAnimationFrame(animate);
-}
-
-animate();
