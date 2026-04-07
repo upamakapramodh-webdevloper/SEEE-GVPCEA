@@ -1393,3 +1393,17 @@ box-shadow:
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
 }
+
+.gallery-video{
+width:260px;
+height:170px;
+border-radius:12px;
+object-fit:cover;
+cursor:pointer;
+transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.gallery-video:hover{
+transform:scale(1.05);
+box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
