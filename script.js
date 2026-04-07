@@ -306,11 +306,9 @@ window.addEventListener("scroll", () => {
 
     const scrollY = window.scrollY;
 
-    document.querySelectorAll(".hero, .card, .event-album").forEach(el => {
+    document.querySelectorAll(".background-slider").forEach(el => {
 
-        const speed = 0.03;
-
-        el.style.transform = `translateY(${scrollY * speed}px)`;
+        el.style.transform = `translateY(${scrollY * 0.2}px)`;
 
     });
 
